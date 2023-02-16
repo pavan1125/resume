@@ -1,3 +1,313 @@
-jhnjbvhv
 <!DOCTYPE html>
-https://stackblitz.com/edit/web-platform-lwrddt?file=index.html
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html,
+      body {
+        height: calc(100% - 10px);
+      }
+
+      .main {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .header {
+        padding: 15px;
+        background-color: #86d0f5;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .profile {
+        align-self: center;
+        display: flex;
+        width: fit-content;
+        border: 1px solid black;
+        border-radius: 100%;
+        overflow: hidden;
+      }
+
+      #name {
+        text-align: center;
+        display: block;
+        margin-bottom: 1px;
+        padding-bottom: 0;
+        border-bottom: 3px solid black;
+      }
+
+      #addressP,
+      #addressH2 {
+        margin: 0;
+      }
+
+      .page > div {
+        margin-top: 10px;
+      }
+
+      .pP,
+      .pH2 {
+        margin: 0;
+      }
+
+      .contact {
+        display: flex;
+        align-items: center;
+      }
+
+      #contactP {
+        margin-left: 10px;
+      }
+
+      .userName {
+        color: #86d0f5;
+        text-align: center;
+      }
+
+      .reff {
+        margin-top: 15px;
+      }
+
+      .reff .a {
+        padding: 5px 0px;
+      }
+
+      .reff a {
+        text-decoration: none;
+        color: black;
+        font-size: large;
+        font-weight: 600;
+        justify-content: center;
+      }
+
+      .page {
+        display: none;
+      }
+
+      .page:target {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      #companyH2 {
+        margin: 0 10px;
+      }
+
+      #companyH2::before {
+        content: '• ';
+      }
+
+      .cnamemarks {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      #companyDetails {
+        font-style: italic;
+        margin: 0 10px 10px;
+      }
+
+      @media only screen and (min-width: 768px) {
+        .container {
+          display: flex;
+          flex-direction: row;
+          height: 100%;
+        }
+
+        .main {
+          margin: 0;
+          flex-grow: 1;
+        }
+
+        .header {
+          display: flex;
+          flex-grow: 1;
+        }
+
+        .page:target {
+          flex-grow: 8;
+          width: 250px;
+          flex-wrap: wrap;
+        }
+      }
+    </style>
+    <title>Dynamic Resume</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="header">
+          <div class="profile">
+            <img
+              alt="image"
+              src="https://i.pinimg.com/736x/ba/d7/86/bad786dfe4f227555be6fa2484b0b9a3.jpg"
+              width="100px"
+            />
+          </div>
+          <div class="reff">
+            <div class="a"><a href="#page1">Profile</a></div>
+            <div class="a"><a href="#page2">Experience</a></div>
+            <div class="a"><a href="#page3">Education</a></div>
+            <div class="a"><a href="#page4">Occupation</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="page" id="page1">
+        <div class="userName">
+          <h1>USERNAME</h1>
+        </div>
+        <h1 id="name">Profile</h1>
+
+        <div>
+          <h2 class="pH2" id="addressH2">Address</h2>
+          <p class="pP" id="addressP">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ad
+            porro omnis repellendus maxime? Fugit!
+          </p>
+        </div>
+        <div class="contact">
+          <h2 class="pH2" id="contactN2">Contact No.:</h2>
+          <p class="pP" id="contactP">+91 98653 78451</p>
+        </div>
+        <div class="contact">
+          <h2 class="pH2" id="contactN2">Email Address :</h2>
+          <p class="pP" id="contactP">username@work.com</p>
+        </div>
+      </div>
+      <div class="page" id="page2">
+        <div class="userName">
+          <h1>USERNAME</h1>
+        </div>
+        <h1 id="name">Experience</h1>
+        <div>
+          <h2 class="pH2" id="companyH2">JobTitle.</h2>
+          <p class="pP" id="companyDetails">
+            Company Name / Location / JoinDate - LeaveDate
+          </p>
+          <p class="pP" id="companyP">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Exercitationem velit quod nihil dolor, quae reprehenderit accusamus
+            libero ullam provident rem nemo sed est impedit necessitatibus unde!
+            Ipsum voluptas molestiae maxime architecto soluta cupiditate dolor
+            fugiat ipsam quidem mollitia! Eum fugit molestiae obcaecati
+            assumenda vitae soluta odio rem deserunt non voluptatem suscipit
+            dolorum adipisci aperiam molestias libero, eius aliquid dicta illum
+            natus cumque provident. Natus ipsum consequatur nulla excepturi
+            dolorem debitis, quis magnam quisquam accusamus cupiditate,
+            explicabo assumenda! Non neque aliquam obcaecati illum, cumque
+            earum! Saepe quaerat accusantium laudantium officia? Quam molestias
+            itaque maiores inventore eligendi doloribus quos perspiciatis rerum
+            non!
+          </p>
+        </div>
+        <div>
+          <h2 class="pH2" id="companyH2">JobTitle.</h2>
+          <p class="pP" id="companyDetails">
+            Company Name / Location / JoinDate - LeaveDate
+          </p>
+          <p class="pP" id="companyP">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Exercitationem velit quod nihil dolor, quae reprehenderit accusamus
+            libero ullam provident rem nemo sed est impedit necessitatibus unde!
+            Ipsum voluptas molestiae maxime architecto soluta cupiditate dolor
+            fugiat ipsam quidem mollitia! Eum fugit molestiae obcaecati
+            assumenda vitae soluta odio rem deserunt non voluptatem suscipit
+            dolorum adipisci aperiam molestias libero, eius aliquid dicta illum
+            natus cumque provident. Natus ipsum consequatur nulla excepturi
+            dolorem debitis, quis magnam quisquam accusamus cupiditate,
+            explicabo assumenda! Non neque aliquam obcaecati illum, cumque
+            earum! Saepe quaerat accusantium laudantium officia? Quam molestias
+            itaque maiores inventore eligendi doloribus quos perspiciatis rerum
+            non!
+          </p>
+        </div>
+        <div>
+          <h2 class="pH2" id="companyH2">JobTitle.</h2>
+          <p class="pP" id="companyDetails">
+            Company Name / Location / JoinDate - LeaveDate
+          </p>
+          <p class="pP" id="companyP">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Exercitationem velit quod nihil dolor, quae reprehenderit accusamus
+            libero ullam provident rem nemo sed est impedit necessitatibus unde!
+            Ipsum voluptas molestiae maxime architecto soluta cupiditate dolor
+            fugiat ipsam quidem mollitia! Eum fugit molestiae obcaecati
+            assumenda vitae soluta odio rem deserunt non voluptatem suscipit
+            dolorum adipisci aperiam molestias libero, eius aliquid dicta illum
+            natus cumque provident. Natus ipsum consequatur nulla excepturi
+            dolorem debitis, quis magnam quisquam accusamus cupiditate,
+            explicabo assumenda! Non neque aliquam obcaecati illum, cumque
+            earum! Saepe quaerat accusantium laudantium officia? Quam molestias
+            itaque maiores inventore eligendi doloribus quos perspiciatis rerum
+            non!
+          </p>
+        </div>
+      </div>
+      <div class="page" id="page3">
+        <div class="userName">
+          <h1>USERNAME</h1>
+        </div>
+        <h1 id="name">Education</h1>
+
+        <div>
+          <h2 class="pH2" id="companyH2">CourseName.</h2>
+          <div class="cnamemarks">
+            <p class="pP" id="companyDetails">
+              Collage Name / Location / StartDate - EndDate
+            </p>
+            <p class="pP" id="companyDetails">Grades/Marks</p>
+          </div>
+          <p class="pP" id="companyP">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+            placeat harum voluptatibus consequuntur, iste eveniet cum obcaecati
+            neque ratione totam distinctio officiis id itaque adipisci aperiam
+            at expedita quibusdam hic atque eius minima voluptates. Dicta amet
+            eligendi magni, odit quae eum perspiciatis natus sequi totam
+            consequatur tenetur! Eius, architecto quos.
+          </p>
+        </div>
+        <div>
+          <h2 class="pH2" id="companyH2">CourseName.</h2>
+          <div class="cnamemarks">
+            <p class="pP" id="companyDetails">
+              Collage Name / Location / StartDate - EndDate
+            </p>
+            <p class="pP" id="companyDetails">Grades/Marks</p>
+          </div>
+          <p class="pP" id="companyP">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+            placeat harum voluptatibus consequuntur, iste eveniet cum obcaecati
+            neque ratione totam distinctio officiis id itaque adipisci aperiam
+            at expedita quibusdam hic atque eius minima voluptates. Dicta amet
+            eligendi magni, odit quae eum perspiciatis natus sequi totam
+            consequatur tenetur! Eius, architecto quos.
+          </p>
+        </div>
+      </div>
+
+      <div class="page" id="page4">
+        <div class="userName">
+          <h1>USERNAME</h1>
+        </div>
+        <h1 id="name">Occupation</h1>
+
+        <div>
+          <p class="pP" id="companyP">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+            placeat harum voluptatibus consequuntur, iste eveniet cum obcaecati
+            neque ratione totam distinctio officiis id itaque adipisci aperiam
+            at expedita quibusdam hic atque eius minima voluptates. Dicta amet
+            eligendi magni, odit quae eum perspiciatis natus sequi totam
+            consequatur tenetur! Eius, architecto quos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
